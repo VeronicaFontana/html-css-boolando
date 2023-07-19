@@ -17,7 +17,9 @@ body{
   box-shadow: 0 1px grey;
   display: flex;
   justify-content: center;
+  z-index: 999;
 }
+
 .top-menu{
   height: 70px;
   max-width: 1200px;
@@ -45,17 +47,23 @@ body{
   border: 1px solid black;
   margin: 100px auto;
   max-width: 1200px;
-  width: 98%;
-  height: 700px;
+  height: fit-content;
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .image-box{
   position: relative;
 }
 
-.card img{
-  width: 60%;
+.card{
+  width: calc(1200px / 3 - 20px);
+  margin-bottom: 30px;
+}
+
+.image-box img{
+  width: 98%;
 }
 
 .discount, .sustain{
@@ -74,6 +82,15 @@ body{
 .sustain{
   background-color: green;
   left: 40px;
+}
+
+.heart{
+  background-color: white;
+  padding: 5px 15px;
+  font-size: 2em;
+  position: absolute;
+  top: 5px;
+  right: 0;
 }
 
 .text-box{
