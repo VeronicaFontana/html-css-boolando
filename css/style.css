@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.top{
+  background-color: rgb(240, 120, 16);
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 1px grey;
+  display: flex;
+  justify-content: center;
+}
+.top .top-menu{
+  height: 70px;
+  max-width: 1200px;
+  width: 98%;
+  background-color: rgb(240, 120, 16);
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+li{
+  display: inline;
+}
+
