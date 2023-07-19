@@ -4,16 +4,21 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* HEADER */
 .top{
   background-color: rgb(240, 120, 16);
   position: fixed;
+  top: 0;
   width: 100%;
   box-shadow: 0 1px grey;
   display: flex;
   justify-content: center;
 }
-.top .top-menu{
+.top-menu{
   height: 70px;
   max-width: 1200px;
   width: 98%;
@@ -24,7 +29,7 @@
   align-items: center;
 }
 
-li{
+.top-menu li{
   display: inline-block;
   list-style: none;
   padding: 0 3px;
@@ -35,5 +40,61 @@ li{
   width: 125px;
 }
 
+/* MAIN */
+.container{
+  border: 1px solid black;
+  margin: 100px auto;
+  max-width: 1200px;
+  width: 98%;
+  height: 700px;
+  display: flex;
+}
 
+.image-box{
+  position: relative;
+}
 
+.card img{
+  width: 60%;
+}
+
+.discount, .sustain{
+  color: white;
+  position: absolute;
+  padding: 5px;
+  bottom: 30px;
+  font-size: 0.7em;
+}
+
+.discount{
+  background-color: red;
+  left: 0;
+}
+
+.sustain{
+  background-color: green;
+  left: 40px;
+}
+
+.text-box{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+}
+
+h4{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.price, .brand{
+  font-size: 0.8em;
+}
+
+.new-price{
+  color: red;
+}
+
+.old-price{
+  text-decoration: line-through;
+}
