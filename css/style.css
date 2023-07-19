@@ -18,12 +18,22 @@
   max-width: 1200px;
   width: 98%;
   background-color: rgb(240, 120, 16);
-  border: 1px solid black;
+  color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 li{
-  display: inline;
+  display: inline-block;
+  list-style: none;
+  padding: 0 3px;
 }
+
+.top-menu img{
+  height: 30px;
+  width: 125px;
+}
+
+
 
