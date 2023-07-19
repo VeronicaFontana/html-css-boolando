@@ -79,17 +79,12 @@ li{
   opacity: 0;
 }
 
-.discount, .sustain, .sustain-last, .heart{
-  z-index: 50;
-}
-
 .discount, .sustain, .sustain-last{
   color: white;
   position: absolute;
   padding: 5px;
   bottom: 70px;
   font-size: 0.7em;
-
 }
 
 .discount{
