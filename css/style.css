@@ -8,8 +8,14 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+li{
+  display: inline-block;
+  list-style: none;
+  padding: 5px 3px 0 0;
+}
+
 /* HEADER */
-.top{
+.top-bar{
   background-color: rgb(240, 120, 16);
   position: fixed;
   top: 0;
@@ -20,21 +26,18 @@ body{
   z-index: 999;
 }
 
-.top-menu{
+.top-menu, .bottom-menu{
   height: 70px;
   max-width: 1200px;
   width: 98%;
-  background-color: rgb(240, 120, 16);
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.top-menu li{
-  display: inline-block;
-  list-style: none;
-  padding: 0 3px;
+.top-menu ul {
+  font-weight: bold;
 }
 
 .top-menu img{
@@ -63,7 +66,7 @@ body{
 }
 
 .image-box img{
-  width: 98%;
+  width: 100%;
 }
 
 .discount, .sustain{
@@ -115,3 +118,27 @@ h4{
 .old-price{
   text-decoration: line-through;
 }
+
+/* FOOTER */
+.bottom-bar{
+  background-color: rgb(21, 20, 20);
+  display: flex;
+  justify-content: center;
+}
+
+.legal-info span{
+  font-weight: bold;
+}
+
+.legal-info ul{
+  font-size: 0.8em;
+}
+
+.social span{
+  font-size: 0.7em;
+}
+
+
+
+
+
