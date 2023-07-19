@@ -47,7 +47,6 @@ li{
 
 /* MAIN */
 .container{
-  border: 1px solid black;
   margin: 100px auto;
   max-width: 1200px;
   height: fit-content;
